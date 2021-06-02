@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Draw money.</h2>
+Current Amount: <p id="amount">0</p>
+
+<script>
+    var amount = 0;
+    function addAmount(value) {
+        amount += value;
+        document.getElementById("amount").innerHTML = amount;
+    }
+</script>
+<button onclick='addAmount(1);'>Add 1</button>
+<button onclick='addAmount(5);'>Add 5</button>
+<button onclick='addAmount(10);'>Add 10</button>
+<p></p>
+<a href="index.php">Back</a>
+
+</body>
+</html> 
